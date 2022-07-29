@@ -1,0 +1,127 @@
+:root {
+    --main-color: #0096FF;
+    --dark-text: #777777;
+    --heading: #1D1D1D;
+    --small-heading: #4A4A4A;
+
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    color: var(--dark-text);
+}
+
+
+.border,
+a {
+    color: var(--main-color);
+}
+
+.title {
+    color: var(--heading);
+    font-size: 3rem;
+
+    font-weight: 600;
+}
+
+.content h4 {
+    color: var(--small-heading);
+    font-weight: 600;
+}
+
+.content h6 {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 20px;
+    transition: .6s;
+    border-radius: 2px;
+
+}
+
+.btn-transparent:hover {
+
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn-main {
+    background: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .6s;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+
+}
+
+.btn-main:hover {
+    color: var(--main-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+#about {
+    background: #F4FAFD;
+}
+
+#subscribtion {
+    background: var(--main-color);
+}
+
+.companies img {
+    width: 120px;
+}
+
+.feedback-card {
+    position: relative;
+}
+
+
+
+.review {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -76px;
+    right: 41%;
+}
+
+
+/* -----------------------------------------------------------------------
+-------------------------------------Responsive----------------------------
+-------------------------------------------------------------------------- */
+
+@media (max-width:768px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
+
+    #brands {
+        display: none;
+    }
+
+    .course-md {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
+}
